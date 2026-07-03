@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="es-MX">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo-calculadora</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <div class="contenedor-formulario">
+        <h1>Convertidor de Temperatura</h1>
+
+
+        <form class="formulario">
+            <!-- Grupo 1: Datos básicos -->
+             <div class="grupo-formulario">
+                <p class="subtitulo">
+                    <span style='font-size:xx-large;'>
+                        &#8451;
+                        &#8594;
+                        &#8457;
+                    </span>
+                </p>
+             </div>
+
+             <!-- Grupo 2: Grados Celcius y Fahrenheit -->
+            <div class="grupo-doble">
+                <div class="grupo-formulario">
+                    <label for="celcius">Grados Celcius (&#8451;)</label>
+                    <input type="number" id="celcius" placeholder="Ej. 25" required min="-273.15" 
+    step="any">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="fahrenheit">Grados Fahrenheit (&#8457;)</label>
+                    <input type="text" id="fahrenheit" readonly value="- &#8457;">
+                </div>
+            </div>
+
+             <!-- Botón -->
+              <button type="submit" class="boton-enviar" id="btn-convertir" onclick="calcular()">
+                Convertir
+              </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/ejercicio10.js"></script>
+ </body>
+ </html>
