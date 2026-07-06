@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="es-MX">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+ </head>
+ <body>
+    <div class="contenedor-formulario">
+        <h1>Convertidor de Moneda</h1>
+        <form class="formulario">
+            <!-- Grupo 1: Datos básicos -->
+             <div class="grupo-formulario">
+                <p class="subtitulo">
+                    <span style='font-size:xx-large;'>
+                        MXN
+                        &#8594;
+                        USD
+                    </span>
+                </p>
+             </div>
+
+             <!-- Grupo 2: MXN y USD -->
+            <div class="grupo-doble">
+                <div class="grupo-formulario">
+                    <label for="mxn">MXN</label>
+                    <input type="number" id="mxn" placeholder="Ej. 10" required min="0" step="any">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="usd">USD</label>
+                    <input type="text" id="usd" readonly value="- USD">
+                </div>
+            </div>
+
+             <!-- Botón -->
+              <button type="submit" class="boton-enviar" id="btn-convertir" onclick="convertirMoneda()">
+                Convertir
+              </button>
+        </form>
+    </div>
+
+    <script src="js/ejercicio12.js"></script>
+ </body>
+ </html>

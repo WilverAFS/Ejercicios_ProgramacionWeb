@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>Registro de estudiantes</h1>
+        <p class="subtitulo">
+            Ingrese los datos de los estudiantes separando por comas cada uno para conocer los resultados.
+        </p>
+
+        <form class="formulario">
+            <!-- Grupo 1: nombre y calificacion -->
+            <!-- 
+                Implementar regrex para cada input
+             -->
+            <div class="grupo-doble-2-1">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <!-- Solo letras, puede haber acentos, mayusuclar y minusculas -->
+                    <input type="text" id="nombre" placeholder="Ej: Alfredo" required
+                        pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Solo letras, espacios y acentos">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="calificacion">Calificacion</label>
+                    <input type="number" id="calificacion" placeholder="Ej: 80" required min="0" max="100">
+                </div>
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="boton-enviar" onclick="">
+                Agregar estudiante
+            </button>
+
+            <br>
+            <br>
+            <div class="grupo-formulario">
+                <button type="button" class="boton-enviar" onclick="calcular()">
+                    Calcular resultados
+                </button>
+            </div>
+
+            <!-- Grupo 2: Resultado de operaciones -->
+            <div class="grupo-triple">
+                <div class="grupo-formulario">
+                    <label class="lbl-centrado" for="mejor">Mejor Estudiante</label>
+                    <input type="text" id="mejor" readonly value="-">
+                </div>
+                <div class="grupo-formulario">
+                    <label class="lbl-centrado" for="peor">Peor Estudiante</label>
+                    <input type="text" id="peor" readonly value="-">
+                </div>
+                <div class="grupo-formulario">
+                    <label class="lbl-centrado" for="promedio">Promedio</label>
+                    <input type="text" id="promedio" readonly value="-">
+                </div>
+            </div>
+
+            <div class="boton-reset">
+                <button type="button" class="boton-limpiar" onclick="resetFormulario()">
+                    Limpiar
+                </button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="js/ejercicio15.js"></script>
+</body>
+
+</html>

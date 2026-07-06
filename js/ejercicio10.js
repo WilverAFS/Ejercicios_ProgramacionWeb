@@ -2,8 +2,6 @@ function calcular(){
     //obtener el valor de los grados celcius ingresado 
     var celcius = document.getElementById("celcius").value;
 
-    ;
-
     if (celcius === "") {
         document.getElementById("fahrenheit").value =  "- ℉";
         return;

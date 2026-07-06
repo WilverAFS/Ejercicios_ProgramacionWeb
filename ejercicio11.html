@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="es-MX">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de km - mi</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+ </head>
+ <body>
+    <div class="contenedor-formulario">
+        <h1>Convertidor de Distancia</h1>
+
+
+        <form class="formulario">
+            <!-- Grupo 1: Datos básicos -->
+             <div class="grupo-formulario">
+                <p class="subtitulo">
+                    <span style='font-size:xx-large;'>
+                        Kilometros (km)
+                        &#8594;
+                        Millas (mi)
+                    </span>
+                </p>
+             </div>
+
+             <!-- Grupo 2: Kilometros y Millas -->
+            <div class="grupo-doble">
+                <div class="grupo-formulario">
+                    <label for="kilometros">Kilometros (km)</label>
+                    <input type="number" id="kilometros" placeholder="Ej. 10" required min="0" step="any">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="millas">Millas (mi)</label>
+                    <input type="text" id="millas" readonly value="- mi">
+                </div>
+            </div>
+
+             <!-- Botón -->
+              <button type="submit" class="boton-enviar" id="btn-convertir" onclick="convertirDistancia()">
+                Convertir
+              </button>
+
+        </form>
+        
+    </div>
+
+    <script src="js/ejercicio11.js"></script>
+ </body>
+ </html>
