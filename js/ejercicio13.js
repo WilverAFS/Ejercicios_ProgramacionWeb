@@ -11,6 +11,14 @@ function verificarEdad(){
     //convertir la edad a entero 
     edad = parseInt(edad);
 
+    //Verificar que el campo sea positivo
+    if (edad <0){
+        document.getElementById("mensaje").value="-";
+        return;
+    }
+
+    
+
     //validar edad
     if(edad >17){
         document.getElementById("mensaje").value="Puedes votar";

@@ -31,8 +31,23 @@ Diseño de una tabla con `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<td>` y `<th>
 ### Ejercicio 9: (Contenido bloqueado)  
 Este ejercicio está relacionado con prácticas de programación web, pero el documento no está disponible en este momento.
 
-### Ejercicio 10: Conversión Celsius a Fahrenheit  
-Implementación de una calculadora sencilla en HTML y JavaScript. El usuario ingresa grados Celsius y al presionar un botón se muestra el resultado en Fahrenheit en un campo de texto `readonly`. Incluye validaciones para asegurar que el valor sea numérico.
+### Ejercicio 10: Conversión de Grados Celsius a Fahrenheit  
+Implementación de una calculadora de temperatura sencilla en HTML y JavaScript. El usuario ingresa grados *Celsius* y al presionar un botón se muestra el resultado en *Fahrenheit* en un campo de texto `readonly`. Incluye validaciones para asegurar que el valor sea numérico.
+
+### Ejercicio 11: Conversión de Kilometros a Millas  
+Implementación de una calculadora de distancia sencilla en HTML y JavaScript. El usuario ingresa una distancia en *Kilometros* y al presionar un botón se muestra el resultado en *Millas* en un campo de texto `readonly`. Incluye validaciones para asegurar que el valor sea numérico.
+
+### Ejercicio 12: Conversión de Pesos Mexicanos a Dolares Americanos.
+Implementación de una calculadora de conversion de moneda sencilla en HTML y JavaScript. El usuario ingresa una cantidad de pesos (*MXN*) y al presionar un botón se muestra el resultado en dolares (*USD*) en un campo de texto `readonly`. Incluye validaciones para asegurar que el valor sea numérico.
+
+### Ejercicio 13: Verificador de edad.
+Funcion para verificar si una persona puede votar de acuerdo a su edad. El usuario ingresa una su *edad* y al presionar un botón se muestra un mensaje segun sea el caso "*No puede votar*" o  "*Puedes votar*" en un campo de texto `readonly`. Incluye validaciones para asegurar que el valor sea numérico.
+
+### Ejercicio 14: Operaciones sobre un arreglo de numeros.
+Funcion que cakcula el numeros **mayor**, **menor** y el **promedio** de un arreglo de numeros. El usuario ingresa un listado de numeros separados por comas y al dar clic en *"Calcular"* se realizan las operaciones y muestra en tres campos de texto de tipo `readonly` los resultados.
+
+### Ejercicio 15: Operaciones sobre un arreglo de objetos.
+Formulario que opera sobre un arreglo de objetos estudiantes y nuestra el promedio del listado de estudainte, el nombre del estudiante con mayor calificacion y el nombre del estudiante con la calificacion mas baja. El usuario puede agregar un estudiante escribiendo su **nombre** y **calificacion**, cuando da clic en el boton "*Agregar estudiante*" se crea un objeto de tipo estudiante y se apila en el listado de objetos estudiante; se pueden ingresar multiples estudiantes. Cuando el usuario da clic en el boton "*Calcular resultados*" se realiza el calculo sobre el listado de objetos de estudiantes para promediar sus calificaciones, encontrar la calificacion mas alta y la mas baja; despues, se localiza el nombre de los estudiantes a los que les corresponde esa calificacion y se muestra en campos de texto de tipo `readonly` el nombre del *mejor estudiante*, el nombre del *peor estudiante* y el resultado del *promedio*.
 
 ## Tecnologías utilizadas
 - HTML5  
