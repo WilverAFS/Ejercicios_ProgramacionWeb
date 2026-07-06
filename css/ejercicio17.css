@@ -1,0 +1,198 @@
+:root{
+    --color-primario: #2b7a78;
+    --color-secundario: #4cc9f0;
+    --fondo: #1a232a;
+    --panel: #ffffff;
+    --texto: #1f2933;
+    --borde: #158d83;
+    --success: #2ecc71;
+    --danger: #ff6b6b;
+}
+
+/* Reset */
+*{ box-sizing: border-box; margin:0; padding:0; }
+
+body{
+    font-family: Inter, system-ui, Arial, sans-serif;
+    background:  var(--fondo) ;
+    color: var(--texto);
+    padding: 36px 16px;
+    display:flex;
+    justify-content:center;
+}
+
+.contenedor-formulario{
+    width: 100%;
+    max-width: 720px;
+    background: var(--panel);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(43,122,120,0.12);
+    border: 1px solid var(--borde);
+}
+
+h1{
+    text-align:center;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#5b6b70;
+    margin-bottom: 20px;
+}
+
+.grupo-formulario{ margin-bottom: 12px; }
+
+label{ display:block; margin-bottom:6px; color:#55606a; font-weight:600; font-size:14px; }
+
+input[type="text"]{
+    width:100%;
+    padding: 12px 14px;
+    border-radius:8px;
+    border:1px solid var(--borde);
+    font-size:15px;
+    background: #fbfeff;
+}
+
+input[type="text"]:focus{
+    outline:none;
+    box-shadow: 0 0 0 4px rgba(76,201,240,0.12);
+    border-color: var(--color-secundario);
+}
+
+.grupo-doble { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.grupo-doble-3-1 { display:grid; grid-template-columns:3fr 1fr; gap:16px; align-items:center; }
+
+.boton-enviar{
+    background: var(--color-primario);
+    color: white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition: transform .12s ease, background .12s;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.boton-enviar:hover{ transform: translateY(-2px); background: #246a68; }
+
+.boton-limpiar{
+    background: #f0f4f6;
+    color: var(--color-primario);
+    border:1px solid #e1eef2;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.boton-reset{ display:flex; justify-content:flex-end; margin-top:18px; }
+
+.contenedor-tareas{
+    margin-top: 12px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* tarjeta de tarea */
+.tarea{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    gap:12px;
+    align-items:center;
+    padding:12px;
+    border-radius:10px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfeff 100%);
+    border:1px solid var(--borde);
+    box-shadow: 0 4px 12px rgba(16,24,32,0.04);
+}
+
+.tarea-contenido{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.tarea-contenido label{
+    margin:0;
+    font-weight:600;
+    color:var(--texto);
+}
+
+.tarea-estado{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+/* checkbox personalizado */
+.checkbox {
+    width:20px;
+    height:20px;
+    border-radius:6px;
+    border:2px solid #cfeff6;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:white;
+    cursor:pointer;
+}
+
+.checkbox input{ display:none; }
+
+.checkbox input:checked + .checkmark{
+    background: var(--success);
+    border-radius:4px;
+    width:18px;
+    height:18px;
+    display:inline-block;
+}
+
+/* estado texto */
+.estado-texto{
+    font-size:13px;
+    color:#4b5560;
+    font-weight:600;
+}
+
+/* botones de acción en cada tarea */
+.acciones{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.btn-borrar{
+    background: var(--danger);
+    color: white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.btn-borrar:hover{ opacity:0.95; transform: translateY(-1px); }
+
+/* tarea completada estilo */
+.tarea-completada label{
+    text-decoration: line-through;
+    color:#8aa0a0;
+    opacity:0.85;
+}
+
+/* encabezado lista */
+.lista-encabezado{ font-weight:700; color:#6b7b80; margin-bottom:8px; }
+
+/* responsive */
+@media (max-width:520px){
+    .grupo-doble-3-1{ grid-template-columns: 1fr; }
+    .lista-encabezado{ display:none; }
+}

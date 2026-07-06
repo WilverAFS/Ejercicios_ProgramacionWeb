@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ejercicio 17 - Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/ejercicio17.css" />
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Gestión de Tareas</h1>
+        <p class="subtitulo">Agrega, marca y elimina tareas. Las tareas se guardan en Local Storage.</p>
+
+        <form class="formulario" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="nuevaTarea">Agregue una nueva tarea</label>
+            </div>
+
+            <div class="grupo-doble-3-1">
+                <div class="grupo-formulario">
+                    <input type="text" id="nuevaTarea" placeholder="Ej: Estudiar JavaScript" 
+                           pattern=".*\S.*" title="Ingrese una tarea válida" />
+                </div>
+                <div class="grupo-formulario">
+                    <button type="button" class="boton-enviar" id="btnAgregar">Agregar</button>
+                </div>
+            </div>
+
+            <br>
+            <p class="subtitulo">Listado de Tareas</p>
+
+            <div class="lista-encabezado grupo-doble-3-1">
+                <label>Tarea</label>
+                <label>Estado</label>
+            </div>
+
+            <div id="contenedor_tareas" class="contenedor-tareas">
+                <!-- Aquí se renderizan las tareas -->
+            </div>
+
+            <div class="boton-reset">
+                <button type="button" class="boton-limpiar" id="btnLimpiarTodo">Borrar todo</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>

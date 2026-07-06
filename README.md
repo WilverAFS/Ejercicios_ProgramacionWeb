@@ -49,6 +49,20 @@ Funcion que cakcula el numeros **mayor**, **menor** y el **promedio** de un arre
 ### Ejercicio 15: Operaciones sobre un arreglo de objetos.
 Formulario que opera sobre un arreglo de objetos estudiantes y nuestra el promedio del listado de estudainte, el nombre del estudiante con mayor calificacion y el nombre del estudiante con la calificacion mas baja. El usuario puede agregar un estudiante escribiendo su **nombre** y **calificacion**, cuando da clic en el boton "*Agregar estudiante*" se crea un objeto de tipo estudiante y se apila en el listado de objetos estudiante; se pueden ingresar multiples estudiantes. Cuando el usuario da clic en el boton "*Calcular resultados*" se realiza el calculo sobre el listado de objetos de estudiantes para promediar sus calificaciones, encontrar la calificacion mas alta y la mas baja; despues, se localiza el nombre de los estudiantes a los que les corresponde esa calificacion y se muestra en campos de texto de tipo `readonly` el nombre del *mejor estudiante*, el nombre del *peor estudiante* y el resultado del *promedio*.
 
+### Ejercicio 16: Calculadora de operaciones básicas.
+Formulario que permite al usuario ingresar **dos números** y realizar operaciones matemáticas básicas sobre ellos: **suma, resta, multiplicación y división**. El usuario escribe los valores en los campos correspondientes y selecciona la operación deseada mediante los botones disponibles.  
+Al dar clic en un botón de operación, se ejecuta la función correspondiente y el resultado se muestra en un campo de texto de tipo `readonly`. Se incluyen validaciones para garantizar que los valores ingresados sean números válidos y se utiliza una alerta visual (SweetAlert) en caso de error:  
+- Si el usuario ingresa un valor no numérico, se muestra una advertencia.  
+- Si intenta dividir entre cero, se muestra un mensaje de error.
+
+### Ejercicio 17: Gestión de Tareas con Local Storage  
+Aplicación sencilla para **agregar**, **marcar como completadas** (mediante checkboxes) y **eliminar** tareas; las tareas se guardan en **Local Storage** en formato **JSON** para persistencia entre sesiones. La interfaz muestra la lista dinámica de tareas, permite borrar tareas individuales o todas a la vez y usa **SweetAlert2** para confirmaciones y mensajes. La lógica está encapsulada en un **closure** que expone funciones públicas para agregar, eliminar y alternar el estado, demostrando el uso de **scope** y closures en JavaScript.
+
+### Ejercicio 18: Manipulación del DOM con Bootstrap  
+Aplicación web que permite **agregar y eliminar elementos de una lista dinámica** utilizando JavaScript para la manipulación del DOM. El diseño se mejora con **Bootstrap**, incorporando un **header**, **main** y **footer** responsivos, además de clases predefinidas para lograr una interfaz moderna y atractiva. El usuario escribe un texto en el campo de entrada y lo agrega a la lista; cada elemento incluye un botón para eliminarlo fácilmente.
+
+---
+
 ## Tecnologías utilizadas
 - HTML5  
 - CSS3  

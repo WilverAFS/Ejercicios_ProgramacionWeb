@@ -1,0 +1,13 @@
+#lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}

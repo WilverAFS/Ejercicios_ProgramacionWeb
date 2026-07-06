@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calculadora de Numeros</h1>
+        <p class="subtitulo">
+            Ingrese dos numeros y realice operaciones basicas sobre ellos.
+        </p>
+
+        <form class="formulario">
+            <!-- Grupo 1: nombre y calificacion -->
+            <!-- 
+                Implementar regrex para cada input
+             -->
+            <div class="grupo-doble">
+                <div class="grupo-formulario">
+                    <label for="nummero1">Primer numero</label>
+                    <input type="text" id="numero1" placeholder="Ej: 5" required title="Ungrese un numero solamente">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="numero2">Segundo numero</label>
+                    <input type="text" id="numero2" placeholder="Ej: 8" required title="Ingrese un numero solamente">
+                </div>
+            </div>
+
+            <div class="grupo-doble" id="boton-centrado">
+                <button type="button" class="boton-enviar" onclick="calcularOperacion(1)">
+                    Sumar
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion(2)">
+                    Restar
+                </button>
+            </div>
+
+            <div class="grupo-doble" id="boton-centrado">
+                <button type="button" class="boton-enviar" onclick="calcularOperacion(3)">
+                    Multiplicar
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion(4)">
+                    Dividir
+                </button>
+            </div>
+
+            <br>
+
+            <div class="grupo-formulario" id="div-resultado">
+                <label class="lbl-centrado" for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly value="-">
+            </div>
+
+            <div class="boton-reset">
+                <button type="button" class="boton-limpiar" onclick="limpiar()">
+                    Limpiar
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Isetar codigo JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio16.js"></script>
+
+</body>
+
+</html>
